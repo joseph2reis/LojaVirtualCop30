@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es-es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda Amazônia Pai D’égua</title>
+    <link rel="stylesheet" href="./css/estilos.css" />
+  </head>
+  <body>
+    <div id="seletor-idioma">
+      <label for="idioma"><strong>🌍 Idioma:</strong></label>
+      <select id="idioma" onchange="mudarIdioma(this.value)">
+        <option value="index.html">🇧🇷 Português</option>
+        <option value="index-en.html">🇺🇸 English</option>
+        <option value="index-es.html" selected>🇪🇸 Español</option>
+        <option value="index-zh.html">🇨🇳 中文</option>
+      </select>
+    </div>
+
+    <header>
+      <div class="header-container max-contaier">
+        <h1>🌿 Amazônia Pai D’égua</h1>
+
+        <div id="idioma-bandeiras">
+          <a href="index.html"
+            ><img src="img/brasil.png" alt="Português" width="32"
+          /></a>
+          <a href="index-en.html"
+            ><img src="img/eua.png" alt="English" width="32"
+          /></a>
+          <a href="index-es.html"
+            ><img src="img/espanha.png" alt="Español" width="32"
+          /></a>
+          <a href="index-zh.html"
+            ><img src="img/chines.png" alt="中文" width="32"
+          /></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="max-contaier">
+      <section class="hero">
+        <h1>🌿 Tienda Amazônia Pai D’égua</h1>
+        <p>
+          Todo comenzó cuando un grupo de estudiantes de la UEPA intentó hacer
+          tacacá en el laboratorio de química. El jambu se escapó de la olla, el
+          tucupi hirvió demasiado y alguien gritó: “¡Esto está demasiado 'pai
+          d’égua'!” Fue entonces cuando surgió la idea: crear una tienda con
+          kits regionales para que nadie tuviera que convertirse en químico para
+          saborear la Amazonía.
+        </p>
+      </section>
+
+      <section id="destaque">
+        <h2>✨ Kits de Ingredientes Regionales</h2>
+        <p>
+          ¡Lleve un pedacito del bosque a casa con nuestros kits típicos de la
+          Amazonía!
+        </p>
+      </section>
+
+      <section id="produtos">
+        <div class="card-produto">
+          <img src="img/produtos/kitAcai.png" alt="Kit Açaí" />
+          <h3>Kit Tradicional de Açaí</h3>
+          <p>Pulpa de açaí, harina de tapioca y miel de abeja nativa.</p>
+          <p><strong>R$ 49,90</strong></p>
+        </div>
+
+        <div class="card-produto">
+          <img src="img/produtos/kitJabu.png" alt="Kit Jambu" />
+          <h3>Kit Jambu y Tucupi</h3>
+          <p>Perfecto para preparar tacacá o pato en tucupi en casa.</p>
+          <p><strong>R$ 59,90</strong></p>
+        </div>
+
+        <div class="card-produto">
+          <img src="img/produtos/kitDoce.png" alt="Kit Dulces Amazónicos" />
+          <h3>Kit de Dulces Amazónicos</h3>
+          <p>Jalea de cupuaçu, dulce de bacuri y bombones de castaña.</p>
+          <p><strong>R$ 39,90</strong></p>
+        </div>
+
+        <div class="card-produto">
+          <img src="img/produtos/kitPirarucu.png" alt="Kit Pirarucu" />
+          <h3>Kit Pirarucu Ahumado</h3>
+          <p>Pescado noble de la Amazonía con condimentos regionales.</p>
+          <p><strong>R$ 69,90</strong></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <h3>📍 Dónde estamos</h3>
+      <p>
+        Ubicación física:
+        <a href="https://www.google.com/maps?q=UEPA+Telegrafo" target="_blank"
+          >UEPA – Campus Telégrafo</a
+        >, Belém/PA
+      </p>
+      <p>
+        📱 Servicio a través de WhatsApp:
+        <a href="https://wa.me/5591999999999" target="_blank"
+          >(91) 99999-9999</a
+        >
+      </p>
+
+      <iframe
+        src="https://www.google.com/maps?q=UEPA+Telegrafo&output=embed"
+        width="100%"
+        height="300"
+        style="border: 0"
+        allowfullscreen
+        loading="lazy"
+      >
+      </iframe>
+    </footer>
+
+    <script>
+      function mudarIdioma(pagina) {
+        window.location.href = pagina;
+      }
+    </script>
+  </body>
+</html>

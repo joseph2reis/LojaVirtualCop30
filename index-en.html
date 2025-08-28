@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazônia Pai D’égua Store</title>
+    <link rel="stylesheet" href="./css/estilos.css" />
+  </head>
+  <body>
+    <div id="seletor-idioma">
+      <label for="idioma"><strong>🌍 Language:</strong></label>
+      <select id="idioma" onchange="mudarIdioma(this.value)">
+        <option value="index.html">🇧🇷 Português</option>
+        <option value="index-en.html" selected>🇺🇸 English</option>
+        <option value="index-es.html">🇪🇸 Español</option>
+        <option value="index-zh.html">🇨🇳 中文</option>
+      </select>
+    </div>
+
+    <header>
+      <div class="header-container max-contaier">
+        <h1>🌿 Amazônia Pai D’égua</h1>
+
+        <div id="idioma-bandeiras">
+          <a href="index.html"
+            ><img src="img/brasil.png" alt="Português" width="32"
+          /></a>
+          <a href="index-en.html"
+            ><img src="img/eua.png" alt="English" width="32"
+          /></a>
+          <a href="index-es.html"
+            ><img src="img/espanha.png" alt="Español" width="32"
+          /></a>
+          <a href="index-zh.html"
+            ><img src="img/chines.png" alt="中文" width="32"
+          /></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="max-contaier">
+      <section class="hero">
+        <h1>🌿 Amazônia Pai D’égua Store</h1>
+        <p>
+          It all started when a group of UEPA students tried to make tacacá in
+          the chemistry lab. The jambu escaped the pot, the tucupi boiled too
+          much, and someone shouted: “This is so ‘pai d’égua’!” That’s when the
+          idea was born: to create a store with regional kits so no one had to
+          become a chemist to taste the Amazon.
+        </p>
+      </section>
+
+      <section id="destaque">
+        <h2>✨ Regional Ingredient Kits</h2>
+        <p>Bring a piece of the forest home with our typical Amazonian kits!</p>
+      </section>
+
+      <section id="produtos">
+        <div class="card-produto">
+          <img src="img/produtos/kitAcai.png" alt="Açaí Kit" />
+          <h3>Traditional Açaí Kit</h3>
+          <p>Açaí pulp, tapioca flour, and native bee honey.</p>
+          <p><strong>$ 9.90</strong></p>
+        </div>
+
+        <div class="card-produto">
+          <img src="img/produtos/kitJabu.png" alt="Jambu Kit" />
+          <h3>Jambu & Tucupi Kit</h3>
+          <p>Perfect for preparing tacacá or 'pato no tucupi' at home.</p>
+          <p><strong>$ 11.90</strong></p>
+        </div>
+
+        <div class="card-produto">
+          <img src="img/produtos/kitDoce.png" alt="Amazonian Sweets Kit" />
+          <h3>Amazonian Sweets Kit</h3>
+          <p>Cupuaçu jelly, bacuri candy, and Brazil nut chocolates.</p>
+          <p><strong>$ 7.90</strong></p>
+        </div>
+
+        <div class="card-produto">
+          <img src="img/produtos/kitPirarucu.png" alt="Pirarucu Kit" />
+          <h3>Smoked Pirarucu Kit</h3>
+          <p>Noble Amazonian fish with regional spices.</p>
+          <p><strong>$ 13.90</strong></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <h3>📍 Where we are</h3>
+      <p>
+        Physical location:
+        <a href="https://www.google.com/maps?q=UEPA+Telegrafo" target="_blank"
+          >UEPA – Campus Telégrafo</a
+        >, Belém/PA
+      </p>
+      <p>
+        📱 WhatsApp Service:
+        <a href="https://wa.me/5591999999999" target="_blank"
+          >(91) 99999-9999</a
+        >
+      </p>
+
+      <iframe
+        src="https://www.google.com/maps?q=UEPA+Telegrafo&output=embed"
+        width="100%"
+        height="300"
+        style="border: 0"
+        allowfullscreen
+        loading="lazy"
+      >
+      </iframe>
+    </footer>
+
+    <script>
+      function mudarIdioma(pagina) {
+        window.location.href = pagina;
+      }
+    </script>
+  </body>
+</html>
